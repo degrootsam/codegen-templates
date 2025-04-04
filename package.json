@@ -1,0 +1,20 @@
+{
+  "name": "codegen-templates",
+  "version": "1.0.0",
+  "description": "Templates used by the BBS CLI to generate code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "git pull && (git diff --quiet && git diff --cached --quiet && git ls-files --others --exclude-standard) || (git add . && git commit -m 'sync' && git push)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/degrootsam/codegen-templates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/degrootsam/codegen-templates/issues"
+  },
+  "homepage": "https://github.com/degrootsam/codegen-templates#readme"
+}
