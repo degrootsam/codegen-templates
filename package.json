@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/degrootsam/codegen-templates/issues"
   },
-  "homepage": "https://github.com/degrootsam/codegen-templates#readme"
+  "homepage": "https://github.com/degrootsam/codegen-templates#readme",
+  "devDependencies": {
+    "@trunkio/launcher": "^1.3.4"
+  },
+  "dependencies": {
+    "prettier": "^3.5.3"
+  }
 }
