@@ -1,6 +1,6 @@
 {
   "name": "codegen-templates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Templates used by the BBS CLI to generate code",
   "main": "index.js",
   "scripts": {
