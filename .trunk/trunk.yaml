@@ -21,7 +21,7 @@ lint:
     - checkov@3.2.396
     - git-diff-check
     - markdownlint@0.44.0
-    - osv-scanner@2.0.0
+    - osv-scanner@2.0.1
     - prettier@3.5.3
     - shellcheck@0.10.0
     - shfmt@3.6.0
