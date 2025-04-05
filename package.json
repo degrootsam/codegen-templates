@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sync": "git pull && (git diff --quiet && git diff --cached --quiet && git ls-files --others --exclude-standard) || (git add . && git commit -m 'sync' && git push)"
+    "sync": "git pull && (git diff --quiet && git diff --cached --quiet && git ls-files --others --exclude-standard) || (git add . && git commit -m 'sync' && git push)",
+    "update:projects": "git submodule update --remote --merge"
   },
   "repository": {
     "type": "git",
