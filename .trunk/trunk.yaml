@@ -29,7 +29,20 @@ lint:
     - yamllint@1.37.0
 actions:
   enabled:
+    - commitizen
     - trunk-announce
     - trunk-check-pre-push
     - trunk-fmt-pre-commit
     - trunk-upgrade-available
+    - init-submodules
+    - check-submodules
+    - update-submodules
+  definitions:
+    - id: init-submodules
+      run: git submodule update --init --recursive
+    - id: check-submodules
+      triggers:
+        - git_hooks: [pre-commit]
+      run: ./scripts/check-submodule-status.sh
+    - id: update-submodules
+      run: git submodule update --remote --merge
