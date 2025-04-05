@@ -1,5 +1,5 @@
 import { describe, it, expect } from "@jest/globals";
-// import { {{ functionName }} } from "{{ functionPath }}";
+// $importFunction
 
 describe("{{ functionName }}/{{ functionVersion }}", () => {
   it("should do something expected", () => {
