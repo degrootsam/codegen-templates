@@ -1,0 +1,12 @@
+[submodule "functions/project"]
+	path = functions/project
+	url = https://github.com/degrootsam/bb-generic-actions-typescript
+[submodule "functions/project-ts"]
+	path = functions/project-ts
+	url = https://github.com/degrootsam/bb-generic-actions-typescript
+[submodule "functions/projects/ts"]
+	path = functions/projects/ts
+	url = https://github.com/degrootsam/bb-generic-actions-typescript
+[submodule "functions/projects/js"]
+	path = functions/projects/js
+	url = https://github.com/degrootsam/bb-generic-actions
