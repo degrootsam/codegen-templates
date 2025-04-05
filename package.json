@@ -10,7 +10,8 @@
     "setup": "trunk actions run init-submodules",
     "trunk": "trunk",
     "lint": "trunk check",
-    "fmt": "trunk fmt"
+    "fmt": "trunk fmt",
+    "release": "node scripts/create-release-tag.js"
   },
   "repository": {
     "type": "git",
