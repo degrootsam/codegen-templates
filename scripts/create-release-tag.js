@@ -8,7 +8,9 @@ if (!version || !/^v?\d+\.\d+\.\d+$/.test(version)) {
 }
 
 try {
-  execSync(`git tag ${version} -m "Release ${version}"`, { stdio: "inherit" });
+  execSync(`git tag v${version} -m "Release v${version}"`, {
+    stdio: "inherit",
+  });
   execSync(`git push origin ${version}`, { stdio: "inherit" });
 
   console.log(`✅ Tag ${version} created and pushed.`);
