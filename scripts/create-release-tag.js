@@ -8,12 +8,13 @@ if (!version || !/^v?\d+\.\d+\.\d+$/.test(version)) {
 }
 
 try {
-  execSync(`git tag v${version} -m "Release v${version}"`, {
+  const parsedVersion = version.startsWith("v") ? version : `v${version}`;
+  execSync(`git tag ${parsedVersion} -m "Release ${parsedVersion}"`, {
     stdio: "inherit",
   });
-  execSync(`git push origin ${version}`, { stdio: "inherit" });
+  execSync(`git push origin ${parsedVersion}`, { stdio: "inherit" });
 
-  console.log(`✅ Tag ${version} created and pushed.`);
+  console.log(`✅ Tag ${parsedVersion} created and pushed.`);
 } catch (err) {
   console.error("❌ Failed to create or push tag:", err.message);
   process.exit(1);
