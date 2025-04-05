@@ -20,8 +20,6 @@ These are hosted as **nested Git submodules** inside `codegen-templates/projects
 To install and initialize everything:
 
 ```bash
-git clone https://github.com/degrootsam/codegen-templates
-npm install
 npm run setup
 ```
 
@@ -73,6 +71,23 @@ npm run release
 > This runs: `node scripts/create-release-tag.js`
 
 Make sure all submodules are pointing to the correct versions before tagging!
+
+---
+
+## 📦 Dependencies
+
+This repository relies on the following dev dependencies:
+
+| Package                                                                              | Version | Purpose                                                                   |
+| ------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------- |
+| [@trunkio/launcher](https://www.npmjs.com/package/@trunkio/launcher)                 | ^1.3.4  | CLI integration for managing pre-commit hooks and actions via Trunk.io    |
+| [commitizen](https://www.npmjs.com/package/commitizen)                               | ^4.3.1  | Standardizes commit messages and helps follow conventional commit formats |
+| [cz-conventional-changelog](https://www.npmjs.com/package/cz-conventional-changelog) | ^3.3.0  | Adapter for Commitizen to enforce the Conventional Changelog spec         |
+| [prettier](https://www.npmjs.com/package/prettier)                                   | ^3.5.3  | Code formatter to enforce consistent style                                |
+
+These tools ensure consistent formatting, commits, and CI-ready submodule management.
+
+These tools ensure consistent formatting, commits, and CI-ready submodule management.
 
 ---
 
