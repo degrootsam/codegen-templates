@@ -8,7 +8,7 @@ describe("{{ functionName }}/{{ functionVersion }}", () => {
     const expected = "expected output";
 
     // Act
-    const result = // $callFunction;
+    const result = // $callFunction
       // Assert
       expect(result).toBe(expected);
   });
