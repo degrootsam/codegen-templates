@@ -2,13 +2,13 @@ import { describe, it, expect } from "@jest/globals";
 // $importFunction
 
 describe("{{ functionName }}/{{ functionVersion }}", () => {
-  it("should do something expected", () => {
+  it("should do something expected", async () => {
     // Arrange
-    const input = "test input";
+    const input = "{ ...input }";
     const expected = "expected output";
 
     // Act
-    const result = "replace this with {{ functionName }}(input)";
+    const result = await "{{ functionName }}(input)";
 
     // Assert
     expect(result).toBe(expected);
