@@ -1,4 +1,4 @@
-import { describe, it, expect } from "@jest/globals";
+import { describe, it, expect } from "vitest";
 // $importFunction
 
 describe("{{ functionName }}/{{ functionVersion }}", () => {
@@ -14,4 +14,4 @@ describe("{{ functionName }}/{{ functionVersion }}", () => {
   });
 });
 
-// Read https://jestjs.io/docs/getting-started for more info on writing tests with Jest
+// Read https://vitest.dev/guide/ for more info on writing tests with Vitest
